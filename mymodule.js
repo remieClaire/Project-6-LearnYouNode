@@ -11,6 +11,7 @@ const fs = require('fs');
 
 // the function export
 module.exports = function (dir, ext, callback) {
+    // filestream module comes with a read directory function
     fs.readdir(dir, function(err, data) {
         // if error occurs, return
         if (err) { return callback(err) }

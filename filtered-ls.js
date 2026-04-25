@@ -1,8 +1,10 @@
+// import the filestream module
 const fs = require('fs');
 
 // Prints list of files in a given directory
 fs.readdir(process.argv[2], (err, list) => {
     
+    // if an error is encountered, log to console and exit
     if (err) {
         console.error(err);
         return;

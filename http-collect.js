@@ -12,7 +12,7 @@ http.get(url, function(response) {
     // string to hold the entire stream of data
     let result = '';
 
-    // when each chunk of the data stream arrives, just print it out
+    // when each chunk of the data stream arrives, append it to the string
     response.on('data', function(data) {
         // append data to string
         result += data;

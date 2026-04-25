@@ -3,6 +3,7 @@ const fs = require('fs');
 // Read a file
 try {
     // read data & get buffer object
+    // fs.readFileSync recommended in hints
     const buffer = fs.readFileSync(process.argv[2]);
 
     // convert buffer to a string
@@ -21,14 +22,13 @@ try {
 } 
 catch (err) {
     console.error(err);
-
 }
 
 
 
 /*
 * ASYNC VERSION
-
+* accidentally wrote async version first instead of synchronous
 let total = 0;
 
 fs.readFile(process.argv[2], (err, data) => {

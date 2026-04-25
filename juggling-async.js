@@ -12,6 +12,10 @@ const url3 = process.argv[4];
  * and will return a promise object when it resolves or rejects.
  * Resolve indicates success and will return the correct string output.
  * Reject indicates failure and will return an error. 
+ * 
+ * Citing Sources:
+ * ASYNC/AWAIT: https://youtu.be/9j1dZwFEJ-c?si=jCHwVPX44IHXDZjb 
+ * JS Promises: https://youtu.be/NOzi4wBHn0o?si=UNjSAHbTcoIPQ_BW 
  */
 
 function filterData(url) {
